@@ -60,6 +60,8 @@ common button
     justify-content: center;
 }
 [class^="pagelink-btn__"] {
+    overflow: hidden;
+    position: relative;
     display: inline-block;
     padding: 1rem 0;
     margin: 0 5px;
@@ -76,7 +78,64 @@ common button
     color: #fff;
     background-image: linear-gradient(to right, #6b54ff, #7251fb, #794df7, #7f4af3, #8546ef);
 }
+[class^="pagelink-btn__"]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    width: 100%;
+    height: 100%;
+    background-color: #4f3fa5;
+    border-radius: 4rem;
+    -webkit-transition: transform 0.75s cubic-bezier(0,1.01,.13,1.09);
+    transition: transform 0.75s cubic-bezier(0,1.01,.13,1.09);
+}
+.pagelink-btn-label {
+    display: inline-block;
+    position: relative;
+}
+@-webkit-keyframes btnOverLabel {
+    0% {
+        -webkit-transform: translateX(-20%);
+        transform: translateX(-20%);
+    }
+    50% {
+        -webkit-transform: translateX(10%);
+        transform: translateX(10%);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes btnOverLabel {
+    0% {
+        -webkit-transform: translateX(-20%);
+        transform: translateX(-20%);
+    }
+    50% {
+        -webkit-transform: translateX(10%);
+        transform: translateX(10%);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
 
+@media screen and (min-width: 1376px) {
+    [class^="pagelink-btn__"]:hover::before {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    [class^="pagelink-btn__"]:hover .pagelink-btn-label {
+        -webkit-animation: btnOverLabel 0.5s linear;
+        animation: btnOverLabel 0.5s linear;
+        color: #fff;
+    }
+}
 @media screen and (max-width: 575.98px) {
     .pagelink-btn-area .flex-box {
         justify-content: space-between;
@@ -106,7 +165,7 @@ common form
 }
 .cmn-form-tit-idx {
     display: inline-block;
-    padding: 3px 0.75rem 0 0;
+    padding: 5px 0.75rem 0 0;
     vertical-align: top;
 }
 .cmn-form-wrap__row .cmn-form-tit {
@@ -310,8 +369,7 @@ common form
 }
 .cmn-radio-btn label {
     display: block;
-    padding: 1rem 0;
-    line-height: 1;
+    padding: 0.75rem 0;
     text-align: center;
     color: #fff;
     background-color: #999;
@@ -574,13 +632,36 @@ content
     color: #fff;
     z-index: 1;
 }
-.galaxy-class-link:hover img {
-    transform: rotate(-2deg);
+.galaxy-class-link.disable {
+    pointer-events: none;
 }
-.galaxy-class-link:hover::after {
-    transform: rotate(2deg);
+.galaxy-class-link.disable::after {
+    z-index: 1;
+    background-image: linear-gradient(to right, #6b54ff, #7251fb, #794df7, #7f4af3, #8546ef) !important;
+    opacity: 0.7;
+}
+.galaxy-class-link.disable .end-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 7rem;
+    height: 7rem;
+    line-height: 7rem;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 100%;
+    z-index: 2;
 }
 
+@media screen and (min-width: 1376px) {
+    .galaxy-class-link:hover img {
+        transform: rotate(-2deg);
+    }
+    .galaxy-class-link:hover::after {
+        transform: rotate(2deg);
+    }
+}
 @media screen and (max-width: 1399.98px) {
     .main-vsl-slider .slick-prev {
         left: 0;
@@ -646,6 +727,11 @@ content
     .galaxy-class-link-cont {
         padding: 2rem;
     }
+    .galaxy-class-link.disable .end-label {
+        width: 10rem;
+        height: 10rem;
+        line-height: 10rem;
+    }    
 }
 
 /*============================================================
@@ -662,7 +748,27 @@ apply
 .form-select-shop .cmn-radio-btn:last-child {
     margin-right: 0;
 }
+.form-select-shop :disabled + label {
+    color: #666;
+    cursor: auto;
+}
+.form-select-shop :disabled + label .label {
+    display: inline-block;
+    padding: 7px 0 5px;
+    margin-right: 5px;
+    width: 2.5rem;
+    line-height: 1;
+    color: #f1f1f4;
+    background-color: #666;
+    border-radius: 3px;
+    vertical-align: top;
+}
 
+@media screen and (max-width: 991.98px) {
+    .form-select-shop label {
+        height: 100%;
+    }
+}
 @media screen and (max-width: 575.98px) {
     .form-select-shop .cmn-radio-btn {
         margin-right: 2%;
@@ -673,5 +779,8 @@ apply
     }
     .form-select-shop .cmn-radio-btn:nth-child(2n) {
         margin-right: 0;
+    }
+    .form-select-shop :disabled + label .label {
+        width: 3.5rem;
     }
 }

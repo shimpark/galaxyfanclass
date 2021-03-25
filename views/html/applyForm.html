@@ -50,44 +50,44 @@
             <div class="cmn-form-area"> 
                 <div class="grid1170">
                     <dl class="cmn-form-wrap__row">
-                        <dt class="cmn-form-tit fw600 fs30"><span class="cmn-form-tit-idx shp-fw700 fs20 fc-purple">STEP 01</span>매장 선택</dt>
+                        <dt class="cmn-form-tit fw600 fs30"><span class="cmn-form-tit-idx shp-fw700 fs20 fc-purple">STEP 01</span>디지털프라자 지점 선택</dt> <!-- 0325 zoe 수정 -->
                         <dd class="cmn-form-field">
                             <div class="cmn-form-row form-select-shop">
                                 <div class="col1">
                                     <div class="cmn-radio-btn-box">
                                         <div class="cmn-radio-btn fs18">
-                                            <input type="radio" name="selectShop" id="selectShop1" checked>
-                                            <label for="selectShop1">디지털프라자 삼성대치점</label>
-                                        </div>
+                                            <input type="radio" name="selectShop" id="selectShop1" disabled>
+                                            <label for="selectShop1"><span class="label fs14">마감</span>삼성대치점</label>
+                                        </div> <!-- 마감된 매장 (0325 zoe 수정)-->
                                         <div class="cmn-radio-btn fs18">
-                                            <input type="radio" name="selectShop" id="selectShop2">
-                                            <label for="selectShop2">디지털프라자 강남본점</label>
+                                            <input type="radio" name="selectShop" id="selectShop2" checked>
+                                            <label for="selectShop2">강남본점</label>
                                         </div>
                                         <div class="cmn-radio-btn fs18">
                                             <input type="radio" name="selectShop" id="selectShop3">
-                                            <label for="selectShop3">디지털프라자 삼성대치점</label>
+                                            <label for="selectShop3">삼성대치점</label>
                                         </div>
                                         <div class="cmn-radio-btn fs18">
                                             <input type="radio" name="selectShop" id="selectShop4">
-                                            <label for="selectShop4">디지털프라자 연수송도점</label>
+                                            <label for="selectShop4">연수송도점</label>
                                         </div>
                                         <div class="cmn-radio-btn fs18">
                                             <input type="radio" name="selectShop" id="selectShop5">
-                                            <label for="selectShop5">디지털프라자 부천중동점</label>
+                                            <label for="selectShop5">부천중동점</label>
                                         </div>
                                         <div class="cmn-radio-btn fs18">
                                             <input type="radio" name="selectShop" id="selectShop6">
-                                            <label for="selectShop6">디지털프라자 강남본점</label>
+                                            <label for="selectShop6">강남본점</label>
                                         </div>
                                         <div class="cmn-radio-btn fs18">
                                             <input type="radio" name="selectShop" id="selectShop7">
-                                            <label for="selectShop7">디지털프라자 삼성대치점</label>
+                                            <label for="selectShop7">삼성대치점</label>
                                         </div>
                                         <div class="cmn-radio-btn fs18">
                                             <input type="radio" name="selectShop" id="selectShop8">
-                                            <label for="selectShop8">디지털프라자 연수송도점</label>
+                                            <label for="selectShop8">연수송도점</label>
                                         </div>
-                                    </div>
+                                    </div> <!-- 0325 zoe 수정 : label태그 내 디지털프라자 명칭 일괄 삭제 -->
                                 </div>
                             </div>
                         </dd>
@@ -256,9 +256,9 @@
             <div class="pagelink-btn-area">
                 <div class="grid1170">
                     <div class="flex-box">
-                        <a href="javascript:void(0);" class="pagelink-btn__type1 fw700 fs30">취소</a>
-                        <a href="javascript:void(0);" class="pagelink-btn__type2 fw700 fs30">예약 신청</a>
-                    </div>
+                        <a href="javascript:void(0);" class="pagelink-btn__type1 fw700 fs30"><span class="pagelink-btn-label">취소</span></a>
+                        <a href="javascript:void(0);" class="pagelink-btn__type2 fw700 fs30"><span class="pagelink-btn-label">예약 신청</span></a>
+                    </div> <!-- 0325 zoe 수정 -->
                 </div>
             </div> <!-- //page link button -->
         </form> <!-- 신청폼 -->

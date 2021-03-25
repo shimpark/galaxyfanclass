@@ -45,7 +45,7 @@
                                     <div class="grid1170">
                                         <span class="galaxy-class-copy nxn-fw400">갤럭시로 준비 완료</span>
                                         <h2 class="galaxy-class-tit nxn-fw700">공신들의 공부 환경 셋팅</h2>
-                                        <a href="applyForm.html" class="pagelink-btn__type2 fw700 fs30">신청하기</a>
+                                        <a href="applyForm.html" class="pagelink-btn__type2 fw700 fs30"><span class="pagelink-btn-label">신청하기</span></a> <!-- 0325 zoe 수정 -->
                                     </div>
                                 </div>
                             </div>
@@ -58,7 +58,7 @@
                                     <div class="grid1170">
                                         <span class="galaxy-class-copy nxn-fw400">갤럭시로 함께 하는 셀프 웨딩</span>
                                         <h2 class="galaxy-class-tit nxn-fw700">셀프 웨딩 기록법</h2>
-                                        <a href="applyForm.html" class="pagelink-btn__type2 fw700 fs30">신청하기</a>
+                                        <a href="applyForm.html" class="pagelink-btn__type2 fw700 fs30"><span class="pagelink-btn-label">신청하기</span></a> <!-- 0325 zoe 수정 -->
                                     </div>
                                 </div>
                             </div>
@@ -71,7 +71,7 @@
                                     <div class="grid1170">
                                         <span class="galaxy-class-copy nxn-fw400">펫스타그램 완전 정복</span>
                                         <h2 class="galaxy-class-tit nxn-fw700">댕냥이 인생샷 촬영법</h2>
-                                        <a href="applyForm.html" class="pagelink-btn__type2 fw700 fs30">신청하기</a>
+                                        <a href="applyForm.html" class="pagelink-btn__type2 fw700 fs30"><span class="pagelink-btn-label">신청하기</span></a> <!-- 0325 zoe 수정 -->
                                     </div>
                                 </div>
                             </div>
@@ -84,7 +84,7 @@
                                     <div class="grid1170">
                                         <span class="galaxy-class-copy nxn-fw400">나만의 폰 스타일 완성</span>
                                         <h2 class="galaxy-class-tit nxn-fw700">내 맘대로 폰꾸</h2>
-                                        <a href="applyForm.html" class="pagelink-btn__type2 fw700 fs30">신청하기</a>
+                                        <a href="applyForm.html" class="pagelink-btn__type2 fw700 fs30"><span class="pagelink-btn-label">신청하기</span></a> <!-- 0325 zoe 수정 -->
                                     </div>
                                 </div>
                             </div>
@@ -97,7 +97,7 @@
                                     <div class="grid1170">
                                         <span class="galaxy-class-copy nxn-fw400">무엇이든 물어보갤</span>
                                         <h2 class="galaxy-class-tit nxn-fw700">갤럭시 찐 활용법</h2>
-                                        <a href="applyForm.html" class="pagelink-btn__type2 fw700 fs30">신청하기</a>
+                                        <a href="applyForm.html" class="pagelink-btn__type2 fw700 fs30"><span class="pagelink-btn-label">신청하기</span></a> <!-- 0325 zoe 수정 -->
                                     </div>
                                 </div>
                             </div>
@@ -157,6 +157,16 @@
                                 </div>
                             </a>
                         </li>
+                        <li>
+                            <a href="applyForm.html" class="galaxy-class-link disable" data-class="essential">
+                                <img src="../../content/images/class-thumb-essential.jpg" alt="[에센셜] 나만의 폰 스타일 완성 내 맘대로 폰꾸 기록법">
+                                <div class="galaxy-class-link-cont">
+                                    <strong class="galaxy-class-ctg fw600 fc-black">에센셜</strong>
+                                    <p class="fs36">무엇이든<br>물어보갤<br>갤럭시 찐 활용법</p>
+                                </div>
+                                <span class="end-label fs30 fc-purple">마감</span>
+                            </a> <!-- 마감된 클래스에는 disable 추가 (0325 zoe 추가)-->
+                        </li>
                     </ul>
                 </div>
             </article>
@@ -178,7 +188,7 @@
         <!-- //footer END -->
         <script src="../../content/scripts/slick.min.js"></script>
         <script>
-            //main visual slider
+            //main visual slider (0325 zoe 수정)
             $('.main-vsl-slider').slick({
                 slidesToShow: 1,
                 slidesToScroll: 1,
@@ -186,6 +196,7 @@
                 autoplaySpeed: 3000,
                 speed: 1500,
                 arrows: true,
+                pauseOnHover: true,
                 responsive: [
                     {
                         breakpoint: 1024.98,
@@ -197,9 +208,9 @@
                     {
                         breakpoint: 576.98,
                         settings: {
-                            pauseOnHover: false,
                             arrows: false,
-                            dots: true
+                            dots: true,
+                            pauseOnHover: false
                         }
                     }
                 ]
