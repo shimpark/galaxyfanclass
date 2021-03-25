@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+/* font family : Samsung One Korean */
+@font-face{
+    font-family:"SamsungSharpSans";
+    font-weight: bold;
+    font-style: normal;
+    font-display: block;
+    src: url("../fonts/SamsungSharpSans-Bold.woff") format("woff")
+}
+@font-face {
+    font-family: "samsungonekorean600";
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+    src: url("../fonts/SamsungOneKorean-600.woff") format("woff"),
+    url("../fonts/SamsungOneKorean-600.eot"),
+    url("../fonts/SamsungOneKorean-600.eot?#iefix") format("embedded-opentype");;
+}
+
+/* font family : NEXON Lv1 Gothic */
+@font-face{
+    font-family: 'NEXON Lv1 Gothic';
+    font-weight: 400;
+    src:url('../fonts/NEXONLv1Gothic.eot'),
+    url('../fonts/NEXONLv1Gothic.eot#iefix') format("embedded-opentype"),
+    url('../fonts/NEXONLv1Gothic.woff') format("woff");
+}
+@font-face{
+    font-family: 'NEXON Lv1 Gothic Bold';
+    font-weight: 400;
+    src:url('../fonts/NEXONLv1GothicBold.eot'),
+    url('../fonts/NEXONLv1GothicBold.eot#iefix') format("embedded-opentype"),
+    url('../fonts/NEXONLv1GothicBold.woff') format("woff");
+}
