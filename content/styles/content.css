@@ -458,10 +458,10 @@ content
     background-image: url("../images/main-visual-pet.jpg");
 }
 .galaxy-class-wrap[data-class="phonekku"] {
-    background-color: #4f3fa5;
+    background-image: url("../images/main-visual-phonekku.jpg");
 }
 .galaxy-class-wrap[data-class="essential"] {
-    background-color: #4f3fa5;
+    background-image: url("../images/main-visual-essential.jpg");
 }
 .galaxy-class-row {
     display: table-row;
@@ -505,6 +505,7 @@ content
 .galaxy-class-txt {
     padding-top: 3rem;
     font-size: 1.5rem;
+    line-height: 1.4;
 }
 .galaxy-class-wrap [class^="pagelink-btn__"] {
     margin-top: 2rem;
@@ -517,7 +518,7 @@ content
     }
     .galaxy-class-ctg {
         padding: 0.75rem 0 0.5rem;
-        width: 7rem;
+        width: 8.5rem;
         font-size: 1.4rem;
     }
     .galaxy-class-tit {
@@ -527,7 +528,6 @@ content
     }
     .galaxy-class-txt {
         font-size: 1.7rem;
-        line-height: 1.4;
     }
     .galaxy-class-wrap [class^="pagelink-btn__"] {
         margin-top: 3rem;
