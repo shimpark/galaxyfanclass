@@ -79,7 +79,7 @@ common button
     background-image: linear-gradient(to right, #6b54ff, #7251fb, #794df7, #7f4af3, #8546ef);
 }
 [class^="pagelink-btn__"]::before {
-    content: "";
+    content: "";    
     position: absolute;
     top: 0;
     left: 0;
@@ -470,29 +470,24 @@ content
     display: table-cell;
     vertical-align: middle;
 }
-.galaxy-class-ctg {
+.galaxy-class-ctg { /* 0326 zoe 수정 */
     display: inline-block;
-    padding: 0.5rem 0;
-    margin-bottom: 1rem;
-    width: 6rem;
-    font-size: 1rem;
-    text-align: center;
-    border-radius: 3.5rem;
+    margin-bottom: 0.5rem;
 }
 [data-class="edu"] .galaxy-class-ctg {
-    background-color: #92d3c9;
+    color: #92d3c9;
 }
 [data-class="wedding"] .galaxy-class-ctg {
-    background-color: #f1cb7b;
+    color: #f1cb7b;
 }
 [data-class="pet"] .galaxy-class-ctg {
-    background-color: #c0e190;
+    color: #c0e190;
 }
 [data-class="phonekku"] .galaxy-class-ctg {
-    background-color: #f0aa89;
+    color: #f0aa89;
 }
 [data-class="essential"] .galaxy-class-ctg {
-    background-color: #bbb;
+    color: #bbb;
 }
 .galaxy-class-copy {
     display: block;
@@ -516,10 +511,8 @@ content
         height: 40rem;
         text-align: center;
     }
-    .galaxy-class-ctg {
-        padding: 0.75rem 0 0.5rem;
-        width: 8.5rem;
-        font-size: 1.4rem;
+    .galaxy-class-ctg { /* 0326 zoe 수정 */
+        margin-bottom: 1rem;
     }
     .galaxy-class-tit {
         padding-top: 1.5rem;
@@ -724,13 +717,16 @@ content
         margin-right: 0;
         width: 100%;
     }
-    .galaxy-class-link-cont {
-        padding: 2rem;
+    .galaxy-class-link-cont { /* 0326 zoe 수정 */
+        padding: 3rem;
     }
     .galaxy-class-link.disable .end-label {
         width: 10rem;
         height: 10rem;
         line-height: 10rem;
+    }
+    .galaxy-class-link-cont p { /* 0326 zoe 추가 */
+        font-size: 3rem;
     }    
 }
 

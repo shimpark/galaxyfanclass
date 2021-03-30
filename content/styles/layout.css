@@ -790,6 +790,10 @@ text style
 }
 /* font size
 ============================================================*/
+.fs40 { /* 0326 zoe 추가 */
+    font-size: 2rem;
+    line-height: 1.3;
+}
 .fs36 {
     font-size: 1.8rem;
     line-height: 1.3;
@@ -800,6 +804,9 @@ text style
 }
 .fs28 {
     font-size: 1.4rem;
+}
+.fs26 { /* 0326 zoe 추가 */
+    font-size: 1.3rem;
 }
 .fs20 {
     font-size: 1rem;
@@ -818,6 +825,9 @@ text style
 }
 
 @media screen and (max-width: 575.98px) {
+    .fs40 { /* 0326 zoe 추가 */
+        font-size: 2.4rem;
+    }
     .fs36 {
         font-size: 2.2rem;
     }
@@ -825,6 +835,9 @@ text style
         font-size: 1.9rem;
     }
     .fs28 {
+        font-size: 1.8rem;
+    }
+    .fs26 { /* 0326 zoe 추가 */
         font-size: 1.8rem;
     }
     .fs20 {
@@ -959,6 +972,9 @@ color palatte
 }
 .grdpink {
     background-image: linear-gradient(to right, #f5eef0, #f4ecf1, #f1eaf3, #ece9f5, #e5e9f7);
+}
+.black {
+    background-color: #000 !important;
 }
 
 /*============================================================
