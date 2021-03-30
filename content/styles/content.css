@@ -3,8 +3,7 @@
 /*============================================================
 footer
 ============================================================*/
-footer {
-  /* 0330 zoe 수정 */
+footer { 
   padding: 2rem 0;
   background-color: #f8f8f9;
   border-top: 1px solid #cecece;
@@ -520,6 +519,23 @@ content
     height: 40rem;
     text-align: center;
   }
+  /* 0330 2차 zoe 추가 시작 */
+  .galaxy-class-wrap[data-class="edu"] {
+    background-position: left 20% top;
+  }
+  .galaxy-class-wrap[data-class="wedding"] {
+    background-position: right 25% top;
+  }
+  .galaxy-class-wrap[data-class="pet"] {
+    background-position: left 45% top;
+  }
+  .galaxy-class-wrap[data-class="phonekku"] {
+    background-position: left 40% top;
+  }
+  .galaxy-class-wrap[data-class="essential"] {
+    background-position: right 45% top;
+  }
+  /* 0330 2차 zoe 추가 시작 */
   .galaxy-class-ctg {
     margin-bottom: 1rem;
   }
@@ -663,7 +679,6 @@ content
   z-index: 2;
 }
 .main-event-area {
-  /* 0330 zoe 추가 */
   background-color: #f8f8f9;
 }
 
