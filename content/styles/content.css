@@ -435,12 +435,17 @@ common form
   clip: rect(0 0 0 0);
 }
 
-.cmn-radio-btn label {
+.cmn-radio-btn label { /* 0527 zoe 수정 */
   display: block;
   padding: 0.75rem 0;
+  height: 100%;
   text-align: center;
   color: #fff;
   background-color: #999;
+}
+
+.cmn-radio-btn label.withline { /* 0527 zoe 추가 */
+  padding: 1.4rem 0;
 }
 
 .cmn-radio-btn input[type="radio"]:checked + label {
@@ -511,6 +516,10 @@ common form
 
   .cmn-radio-btn label {
     padding: 1.5rem 0;
+  }
+
+  .cmn-radio-btn label.withline{ /* 0527 zoe 추가 */
+    padding: 2.25rem 0;
   }
 }
 
